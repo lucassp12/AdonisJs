@@ -1,4 +1,5 @@
 'use strict'
+const Antl = use('Antl')
 
 class ForgotPassword {
   get validateAll () {
@@ -9,6 +10,9 @@ class ForgotPassword {
       title: 'required',
       due_date: 'date'
     }
+  }
+  get messages () {
+    return Antl.list('validation')
   }
 }
 
